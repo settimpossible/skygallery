@@ -1,0 +1,56 @@
+
+
+body {
+    margin: 0em;
+    color:black;
+    position:fixed;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/accueil/background.png);
+    background-size: cover;
+    background-size: auto;
+    background-attachment:fixed;  
+    background-repeat:    no-repeat; 
+    background-position: center;
+
+    /* display: grid; */
+    /* grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-template-rows: 70px 70px;
+    width: 100vh; */
+  }
+
+  .contenair {
+      display: flex;
+      justify-self: start;
+      align-content: space-around;
+  }
+
+  #icone1, #icone2, #icone3 {
+    width: 90%;
+    height: 90%;
+  }
+
+#cloud {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cloud-content {
+    position:absolute;
+    z-index:1;
+}
+
+#insidecloud {
+    position:absolute;
+    z-index:2;
+}
+
+#cloud-contenair {
+position: relative;
+}
+
