@@ -28,10 +28,10 @@ const pages = [
   </p>
   <footer class="button-prev-next">
     <div >
-        <img class='previous-page previousPage' src="../gallery/arrow/3.png" alt="arrowprevious">
+        <img class='previous-page previousPage' src="./gallery/arrow/3.png" alt="arrowprevious">
     </div>
     <div  >
-        <img id='continue' class="nextPage next-page hidden" src="../gallery/arrow/3.png" alt="arrownext">
+        <img id='continue' class="nextPage next-page hidden" src="./gallery/arrow/3.png" alt="arrownext">
     </div>
   </footer>`,
   },
@@ -56,15 +56,15 @@ const pages = [
 
   <button id="submit-enigma1">Let's try this!</button>
   <div>
-  <img src="../gallery/output/yes.png" id="hiddenyes" class="hidden"/>
-  <img src="../gallery/output/no.png" id="hiddenno" class="hidden"/>
+  <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
+  <img src="./gallery/output/no.png" id="hiddenno" class="hidden"/>
   </div>
   <footer class="button-prev-next">
     <div >
-        <img class='previous-page previousPage' src="../gallery/arrow/3.png" alt="arrowprevious">
+        <img class='previous-page previousPage' src="./gallery/arrow/3.png" alt="arrowprevious">
     </div>
     <div  >
-        <img id='continue' class="nextPage next-page hidden" src="../gallery/arrow/3.png" alt="arrownext">
+        <img id='continue' class="nextPage next-page hidden" src="./gallery/arrow/3.png" alt="arrownext">
     </div>
   </footer>`,
   },
@@ -87,16 +87,16 @@ const pages = [
     <button id="submit-enigma1">Let's try this!</button>
 
     <div>
-    <img src="../gallery/output/yes.png" id="hiddenyes" class="hidden"/>
-    <img src="../gallery/output/no.png" id="hiddenno" class="hidden"/>
+    <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
+    <img src="./gallery/output/no.png" id="hiddenno" class="hidden"/>
     </div>
     
             <footer class="button-prev-next">
             <div >
-                <img class='previous-page previousPage' src="../gallery/arrow/3.png" alt="arrowprevious">
+                <img class='previous-page previousPage' src="./gallery/arrow/3.png" alt="arrowprevious">
             </div>
             <div  >
-                <img id='continue' class="next-page nextPage" src="../gallery/arrow/3.png" alt="arrownext">
+                <img id='continue' class="next-page nextPage" src="./gallery/arrow/3.png" alt="arrownext">
             </div>
           </footer>
         `,
@@ -116,19 +116,19 @@ const pages = [
            minlength="1" maxlength="20" size="10">
   
     <button id="submit-enigma1">Let's try this!</button>
-    <img src="../gallery/enigma/enigma2.jpg" alt="montpar">
+    <img src="./gallery/enigma/enigma2.jpg" alt="montpar">
 
     <div>
-    <img src="../gallery/output/yes.png" id="hiddenyes" class="hidden"/>
-    <img src="../gallery/output/no.png" id="hiddenno" class="hidden"/>
+    <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
+    <img src="./gallery/output/no.png" id="hiddenno" class="hidden"/>
     </div>
     
             <footer class="button-prev-next">
             <div >
-                <img class='previous-page previousPage' src="../gallery/arrow/3.png" alt="arrowprevious">
+                <img class='previous-page previousPage' src="./gallery/arrow/3.png" alt="arrowprevious">
             </div>
             <div  >
-                <img id='continue' class="next-page nextPage" src="../gallery/arrow/3.png" alt="arrownext">
+                <img id='continue' class="next-page nextPage" src="./gallery/arrow/3.png" alt="arrownext">
             </div>
           </footer>
         `,
@@ -179,16 +179,16 @@ const pages = [
     <button id="submit-enigma1">Let's try this!</button>
   
     <div>
-    <img src="../gallery/output/yes.png" id="hiddenyes" class="hidden"/>
-    <img src="../gallery/output/no.png" id="hiddenno" class="hidden"/>
+    <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
+    <img src="./gallery/output/no.png" id="hiddenno" class="hidden"/>
     </div>
     
             <footer class="button-prev-next">
             <div >
-                <img class='previous-page previousPage' src="../gallery/arrow/3.png" alt="arrowprevious">
+                <img class='previous-page previousPage' src="./gallery/arrow/3.png" alt="arrowprevious">
             </div>
             <div  >
-                <img id='continue' class="next-page nextPage" src="../gallery/arrow/3.png" alt="arrownext">
+                <img id='continue' class="next-page nextPage" src="./gallery/arrow/3.png" alt="arrownext">
             </div>
           </footer>
         `,
@@ -208,19 +208,19 @@ const pages = [
            minlength="1" maxlength="20" size="10">
   
     <button id="submit-enigma1">Let's try this!</button>
-    <img src="../gallery/enigma/1.png" alt="art-type">
+    <img src="./gallery/enigma/1.png" alt="art-type">
 
     <div>
-    <img src="../gallery/output/yes.png" id="hiddenyes" class="hidden"/>
-    <img src="../gallery/output/no.png" id="hiddenno" class="hidden"/>
+    <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
+    <img src="./gallery/output/no.png" id="hiddenno" class="hidden"/>
     </div>
     
             <footer class="button-prev-next">
             <div >
-                <img class='previous-page previousPage' src="../gallery/arrow/3.png" alt="arrowprevious">
+                <img class='previous-page previousPage' src="./gallery/arrow/3.png" alt="arrowprevious">
             </div>
             <div  >
-                <img id='continue' class="next-page nextPage" src="../gallery/arrow/3.png" alt="arrownext">
+                <img id='continue' class="next-page nextPage" src="./gallery/arrow/3.png" alt="arrownext">
             </div>
           </footer>
         `,
@@ -236,7 +236,7 @@ const pages = [
 
     <audio
         controls
-        src="../gallery/enigma/kisskiss.mp3" preload="auto">
+        src="./gallery/enigma/kisskiss.mp3" preload="auto">
     </audio>
 
   <label for="nb">Please add your answer here :</label>
@@ -246,15 +246,15 @@ const pages = [
 
   <button id="submit-enigma1">Let's try this!</button>
   <div>
-  <img src="../gallery/output/yes.png" id="hiddenyes" class="hidden"/>
-  <img src="../gallery/output/no.png" id="hiddenno" class="hidden"/>
+  <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
+  <img src="./gallery/output/no.png" id="hiddenno" class="hidden"/>
   </div>
   <footer class="button-prev-next">
     <div >
-        <img class='previous-page previousPage' src="../gallery/arrow/3.png" alt="arrowprevious">
+        <img class='previous-page previousPage' src="./gallery/arrow/3.png" alt="arrowprevious">
     </div>
     <div  >
-        <img id='continue' class="nextPage next-page hidden" src="../gallery/arrow/3.png" alt="arrownext">
+        <img id='continue' class="nextPage next-page hidden" src="./gallery/arrow/3.png" alt="arrownext">
     </div>
   </footer>`,
   },
@@ -351,7 +351,7 @@ function pageNumber() {
 //   if (evt.key) hiddenYes.classList.add("hiddenyes");
 // }
 
-// document.body.innerHTML += `  <img src="../gallery/output/yes.png" alt=">`;;
+// document.body.innerHTML += `  <img src="./gallery/output/yes.png" alt=">`;;
 
 function pageCrypto() {
   rightToContinue = false;
@@ -455,7 +455,6 @@ function pageFilm() {
 function pageAudio() {
   rightToContinue = false;
   const audio = new Audio("./gallery/enigma/kisskiss.mp3");
-  audio.play();
   let answer = document.querySelector(".enigma1-nb");
   let submit = document.getElementById("submit-enigma1");
   let hiddenYes = document.getElementById("hiddenyes");
