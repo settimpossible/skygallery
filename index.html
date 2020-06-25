@@ -5,26 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky Gallery Game</title>
     <link rel="stylesheet" href="./style.css" />
-    <script type="module" src="./index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <script type="module" src="./index.js"></script> -->
+   <script type="module" src="./audio.js"></script>
 
-
+    
 </head>
 <body>
+  <h1>Discover what's the name of the artwork</h1>
+  <p>raconter la vie</p>
 
-<section class="contenair">
-    <div><img id="icone1" src="/accueil/1.png" alt="icone1"></div>
-    <div><img id="icone2"src="/accueil/2.png" alt="icone2"></div>
-    <div><img id="icone3" src="/accueil/3.png" alt="icone3"></div>
-</section>
 
-<section id="cloud-contenair">
-<div id="cloud-content">
-        <img id="cloud" src="/accueil/cloud.png" alt="cloud">
+
+<label for="nb">Please add your answer here :</label>
+
+<input class="enigma1-nb" type="text" id="nb1" name="nb" required
+       minlength="1" maxlength="10" size="10">
+
+<button id="submit-enigma1">Let's try this!</button>
+<div>
+<img src="../gallery/output/yes.png" id="hiddenyes" class="hidden"/>
+<img src="../gallery/output/no.png" id="hiddenno" class="hidden"/>
 </div>
-<div id="insidecloud" >
-        <img id="insidecloud-content" src="/accueil/insidecloud.gif" alt="insidecloud">
-</div> 
-</section>
+<footer class="button-prev-next">
+  <div >
+      <img class='previous-page previousPage' src="../gallery/arrow/3.png" alt="arrowprevious">
+  </div>
+  <div  >
+      <img id='continue' class="nextPage next-page hidden" src="../gallery/arrow/3.png" alt="arrownext">
+  </div>
+</footer>
 
+
+
+
+
+  
 </body>
 </html>
+<!-- //   <h1>Discover where is artwork is!</h1>
+//   <p>You'll have to find what's in your plate to guess what's not! 🙃</p>
+// <img src="../gallery/enigma/2.jpg" alt="enigma2">  
+
+// <form>
+//       <label for="author-name">Your answer:</label>
+      
+//       <input class="author-firstname" type="text" id="author-name" name="author-name" required
+//              minlength="1" maxlength="10" size="10">
+//              <input type="submit" value="Well, let's find out!">
+//           </form>
+//           <footer class="button-prev-next">
+//           <div >
+//               <img class='previous-page previousPage' src="../gallery/arrow/3.png" alt="arrowprevious">
+//           </div>
+//           <div  >
+//               <img class="next-page nextPage" src="../gallery/arrow/3.png" alt="arrownext">
+//           </div>
+//         </footer> -->
