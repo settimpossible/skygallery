@@ -158,7 +158,7 @@ const pages = [
     <h1>Discover where it is!</h1>
     <div class='box-film'>
     <div class="put-in-line">
-  <p class="resize">🌊🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂</p>
+  <p class="resize">🌊🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂</p>
     <input class="enigma1-nb2" type="text" id="ocean" name="nb" required
     minlength="1" maxlength="20" size="10">
     <p id="output-ocean" class="resize-output invisible">O<span>CE</span>AN'S ELEVEN</p>
@@ -293,9 +293,10 @@ const pages = [
     <img id='kiss' src="./gallery/brancusi/4.png" alt="">
 
     <div class="secret">
-    <img id='tatiana" src="./gallery/brancusi/2.jpg" alt="">
 
-    <p>Parisians who wander between the alleys where Baudelaire, Maupassant or Gainsbourg are buried, often pass in front of it without even looking. <br><br>
+    <p class="answer-secret">Le baiser, Constantin Brancusi, in Montparnasse's cemetery, 1909<br><br>
+    
+    Parisians who wander between the alleys where Baudelaire, Maupassant or Gainsbourg are buried, often pass in front of it without even looking. <br><br>
     
     And yet, if they knew... These light wooden boards conceal one of the most expensive sculptures in the world: The Kiss, by Constantin Brancusi, a block of limestone representing a couple fused together. <br><br>
     
@@ -469,7 +470,7 @@ function pageFilm() {
   let hiddenYes = document.getElementById("hiddenyes");
   let hiddenNo = document.getElementById("hiddenno");
   let films = {
-    ocean: "oceaneleven",
+    ocean: "oceanseleven",
     men: "meninblack",
     exor: "exorcist",
     harry: "harrypotter",
@@ -485,7 +486,7 @@ function pageFilm() {
     let idToFind = `output-${id}`;
     let hiddenElement = document.getElementById(idToFind);
 
-    if (e.target.value == answerFilm) {
+    if (e.target.value.toLowerCase().replace(" ", "").includes(answerFilm)) {
       console.log({ idToFind });
       console.log(hiddenElement);
       hiddenElement.classList.remove("invisible");
@@ -497,7 +498,9 @@ function pageFilm() {
   //      answer.value.toLowerCase().replace(" ", "").includes(pages[page].answer)
 
   submit.addEventListener("click", () => {
-    if (answer.value.toLowerCase().replace(" ", "") == pages[page].answer) {
+    if (
+      answer.value.toLowerCase().replace(" ", "").includes(pages[page].answer)
+    ) {
       hiddenYes.classList.remove("hidden");
       hiddenNo.classList.add("hidden");
       rightToContinue = true;

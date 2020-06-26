@@ -7,7 +7,7 @@
 }
 
 #kiss{
-    width: 42vw;
+    width: 40vw;
 }
 
 #tatiana{
@@ -46,6 +46,7 @@ body {
     z-index: 2;
 
 }
+
 
 
 .container {
@@ -176,13 +177,21 @@ p.resize, p.resize-output {
     width: 50%;
 }
 
+
+
+
 .secret {
+    height: fit-content;
     width: 40vw;
     background-color:rgba(255, 255, 255, 0.6);
 text-align: justify;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif ;
     padding: 10px;
+}
+
+.answer-secret {
+font-size: 12px;
 }
 
 .rebus-box {
@@ -218,7 +227,7 @@ h1 {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 /* .bloc {
     background-color: rgb(249,249,249,0.5);
@@ -370,6 +379,7 @@ footer {
 #movies h1{
     margin:0
 }
+
 
 .enigma1-nb {
   width: 20%;
