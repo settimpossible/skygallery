@@ -6,7 +6,13 @@
     font-style: normal;
 }
 
+#kiss{
+    width: 42vw;
+}
 
+#tatiana{
+    width: 40vw;
+}
 @font-face {
     font-family: 'madelyn_doodlesregular';
     src: url('./madelyn/madelyndoodles-webfont.woff2') format('woff2'),
@@ -28,9 +34,9 @@
 body {
     margin: 0em;
     color:black;
-    height: 100vh;
+    max-height: 100vh;
     width: 100vw;
-    position: fixed;
+    padding-left:10%;
     background-size: cover;
     background-attachment:fixed;  
     background-repeat:    no-repeat; 
@@ -95,9 +101,7 @@ height: 100%;
     z-index: 1;
 }
 
-#lieu {
-    height: 10%;
-}
+
 
 #location {
     margin-top:-30px;
@@ -131,14 +135,26 @@ opacity: 0.3;
 h2{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
-    margin-left: 6.5em;
     margin-top: 2em;
 }
 
 #lieu {
-    height: 50%;
-    margin-left: 10em;
+    width: 30%;
+    margin: 20px 0;
 }
+
+.button-in-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+
+}
+.button-in-line button {
+    margin-left: 5px;
+
+}
+
 
 .locationlieu {
     position: relative;
@@ -146,13 +162,8 @@ h2{
 }
 
 .box-film{
-    position: fixed;
     display: flex;
     flex-direction: column;
-    left: 40vw;
-    top: 20vh;
-    overflow: auto;
-    height: 50vh;
     width: 50vw;
 }
 p.resize, p.resize-output {
@@ -166,12 +177,14 @@ p.resize, p.resize-output {
 }
 
 .secret {
-    width: 80vw;
-    margin: 0 auto;
+    width: 40vw;
+    background-color:rgba(255, 255, 255, 0.6);
+text-align: justify;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif ;
-    overflow: auto;
+    padding: 10px;
 }
+
 .rebus-box {
     display: flex;
     flex-direction: column;
@@ -194,7 +207,6 @@ p.resize, p.resize-output {
 h1 {
     font-family: 'madelyn';
     font-size: 5.4rem;
-    margin-left: 2em;
     margin-top: 2em;
 
 }
@@ -207,7 +219,6 @@ h1 {
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    margin-left: 5.1em;
 }
 /* .bloc {
     background-color: rgb(249,249,249,0.5);
@@ -217,21 +228,38 @@ p {
 
 } */
 
+
+
+
 .enigma1-nb {
-    position: relative;
     padding: 10px;
-    margin-left: 12em;
     border:none;
     z-index: 8;
 } 
+
+#movies {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    height: 80vh;
+    justify-content:center;
+}
+
+#audio {
+    display:flex;
+    flex-direction:column;
+    height: 80vh;
+    justify-content:flex-start;
+}
+#audio > * {
+    margin: 5px;
+}
 
 span {
     font-weight: 900;
     color: springgreen;
 }
-audio {
-    margin-left:10rem;
-}
+
 button {
     position: relative;
     padding:10px;
@@ -246,9 +274,9 @@ button {
 .button-prev-next {
     z-index: 0;
 }
-/* .hidden{
+.hidden{
     display:none;
-}  */
+} 
 
 #hiddenyes, #hiddenno {
     position: fixed;
@@ -299,6 +327,8 @@ button {
 
 }
 
+
+
 .answer-nb {
     font-family: Arial, Helvetica, sans-serif ;
     text-align: center;
@@ -313,8 +343,8 @@ footer {
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 40vh;
-    z-index: 0;
+    height: 20vh;
+    z-index: -1;
 }
 
 
@@ -331,14 +361,20 @@ footer {
 }
 
 .resize{
-    /* width: 30%;
-    justify-content: flex-end; */
+    width: 100%;
+
+    /* jstify-content: flex-end; */
 }
-.resize-output {
-    /* width: 20%;
-    justify-content: flex-start; */
+
+
+#movies h1{
+    margin:0
 }
 
 .enigma1-nb {
-    width: 20%;
+  width: 20%;
+} 
+
+#cloud-container {
+    height: 40vh;
 }

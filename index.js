@@ -62,15 +62,16 @@ const pages = [
     What if we are 7 ? 😳<br>
   </p>
 
-  <img class='personnage perso1' src="./gallery/personnage/2.png" alt="perso">
 
-  
+  <div class="button-zindex">
   <input class="enigma1-nb" type="number" id="nb1" name="nb" required
          minlength="1" maxlength="10" size="10">
 
   <button id="submit-enigma1">Let's try this!</button>
+  </div>
   <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
   <img src="./gallery/output/no.png" id="hiddenno" class="hidden"/>
+  <img class='personnage perso1' src="./gallery/personnage/2.png" alt="perso">
 
   <footer class="button-prev-next">
     <div >
@@ -97,7 +98,7 @@ const pages = [
            minlength="1" maxlength="20" size="10">
   
     <button id="submit-enigma1">Let's try this!</button>
-    <img class='personnage perso1' src="./gallery/personnage/2.png" alt="perso">
+    <img class='personnage perso1' src="./gallery/personnage/11.png" alt="perso">
 
     <div>
     <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
@@ -128,7 +129,7 @@ const pages = [
     </div>
     <img class='personnage perso2' src="./gallery/personnage/7.png" alt="perso">
 
-    <img id="lieu" src="./gallery/enigma/enigma2.jpg" alt="montpar">
+    <img id="lieu" src="./gallery/enigma/enigma2.jpg" alt="enigme2">
   
 
 
@@ -152,7 +153,9 @@ const pages = [
     logic: pageFilm,
     answer: "cemetery",
     background: "url(./gallery/background/6.png)",
-    body: `<h1>Discover where in Montparnasse the artwork is!</h1>
+    body: `
+    <section id="movies">
+    <h1>Discover where it is!</h1>
     <div class='box-film'>
     <div class="put-in-line">
   <p class="resize">🌊🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂</p>
@@ -183,22 +186,28 @@ const pages = [
           minlength="1" maxlength="20" size="10">
           <p id="output-harry" class="resize-output invisible">HAR<span>RY </span> &nbsp POTTER</p>
         </div>
+      
         </div>
-  
+
+
+  <div class="button-in-line">
     <input class="enigma1-nb" type="text" id="nb1" name="nb" required
            minlength="1" maxlength="20" size="10">
-  
     <button id="submit-enigma1">Let's try this!</button>
-  
+    </div>
+    </section>
     <div>
+
     <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
     <img src="./gallery/output/no.png" id="hiddenno" class="hidden"/>
     </div>
-    
+    <img class='personnage perso2' src="./gallery/personnage/9.png" alt="perso">
+
+
             <footer class="button-prev-next">
             <div >
                 <img class='previous-page previousPage' src="./gallery/arrow/3.png" alt="arrowprevious">
-            </div>
+            </div>+
             <div  >
                 <img id='continue' class="next-page nextPage" src="./gallery/arrow/3.png" alt="arrownext">
             </div>
@@ -244,19 +253,25 @@ const pages = [
     answer: "kiss",
     background: "url(./gallery/background/8.png)",
     body: ` <h1>The artwork's title</h1>
+    <section id="audio">
     <audio
         controls
         src="./gallery/enigma/kisskiss.mp3" preload="auto">
     </audio>
-  
+  <div class="button-in-line">
   <input class="enigma1-nb" type="text" id="nb1" name="nb" required
          minlength="1" maxlength="10" size="10">
 
   <button id="submit-enigma1">Let's try this!</button>
   <div>
+  </section>
+  <div>
   <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
   <img src="./gallery/output/no.png" id="hiddenno" class="hidden"/>
   </div>
+
+  <img class='personnage perso2' src="./gallery/personnage/13.png" alt="perso">
+
   <footer class="button-prev-next">
     <div >
         <img class='previous-page previousPage' src="./gallery/arrow/3.png" alt="arrowprevious">
@@ -270,31 +285,36 @@ const pages = [
     title: "Secret",
     logic: pageSecret,
     background: "url(./gallery/background/8.png)",
-    body: `<h1>Congratulations! You can access the secret</h1>
-    <div class="secret">It's a strange wooden box, right ?
+    body: `
+
+    <img class='personnage perso1' src="./gallery/personnage/12.png" alt="perso">
     
-    For the past few years, it has completely covered the stele of a tomb in the Montparnasse cemetery in Paris. 
+    <h1>Congratulations! <br> You can access the secret</h1>
+    <img id='kiss' src="./gallery/brancusi/4.png" alt="">
+
+    <div class="secret">
+    <img id='tatiana" src="./gallery/brancusi/2.jpg" alt="">
+
+    <p>Parisians who wander between the alleys where Baudelaire, Maupassant or Gainsbourg are buried, often pass in front of it without even looking. <br><br>
     
-    Tourists, who wander between the alleys where Baudelaire, Maupassant or Gainsbourg are buried, often pass in front of them without even looking at him. 
+    And yet, if they knew... These light wooden boards conceal one of the most expensive sculptures in the world: The Kiss, by Constantin Brancusi, a block of limestone representing a couple fused together. <br><br>
     
-    And yet, if they knew... These light wooden boards conceal one of the most expensive sculptures in the world: The Kiss, by Constantin Brancusi, a block of limestone representing a couple fused together. 
+    A marvel of simplicity, which adorns the tomb of a certain Tatiania Rachewskaïa, a young Russian, one relative of Tolstoï, who mysteriously committed suicide in Paris, in 1910. <br><br>
     
-    A marvel of simplicity, which adorns the tomb of a certain Tatiania Rachewskaïa, a young Russian, one relative of Tolstoï, who mysteriously committed suicide in Paris, in 1910. 
+    To perfect her French, the young exile takes lessons from a doctor of Romanian origin from the Pasteur Institute, Solomon Marbais. Soon, a passionate romance is born between the student and the doctor. An idyll that will end in the great tradition of the Russian novel. At the end of November 1910, Dr. Marbais' sister visited Tatiana Rachewskaïa in her room on the boulevard de Port-Royal. When she pushes the door, she discovers the young Russian hanged. Suicide. Amorous despair. She was 23 years old.<br><br>
     
-    To perfect her French, the young exile takes lessons from a doctor of Romanian origin from the Pasteur Institute, Solomon Marbais. Soon, a passionate romance is born between the student and the doctor. An idyll that will end in the great tradition of the Russian novel. At the end of November 1910, Dr. Marbais' sister visited Tatiana Rachewskaïa in her room on the boulevard de Port-Royal. When she pushes the door, she discovers the young Russian hanged. Suicide. Amorous despair. She was 23 years old.
+    The Kiss still rests on the tomb of Tatiana Rachewskaïa. To make matters worse, it is located in an isolated corner of the 22nd division of the cemetery, just a few meters from the surrounding wall. Three discreet surveillance cameras are constantly pointed at this treasure, which is also protected by an alarm. And then, for a few months now, there has been the famous wooden case for obvious risks of deterioration. There is frost, bad weather, foam, automobile pollution on Boulevard Raspail, much more corrosive than in 1910. Not to mention the possible fall of a tree." Manner, also, no doubt, for the heirs, by stealing the masterpiece from view, to "put a little pressure" on the administration...<br><br>
     
-    The Kiss still rests on the tomb of Tatiana Rachewskaïa. To make matters worse, it is located in an isolated corner of the 22nd division of the cemetery, just a few meters from the surrounding wall. Three discreet surveillance cameras are constantly pointed at this treasure, which is also protected by an alarm. And then, for a few months now, there has been the famous wooden case for obvious risks of deterioration. There is frost, bad weather, foam, automobile pollution on Boulevard Raspail, much more corrosive than in 1910. Not to mention the possible fall of a tree." Manner, also, no doubt, for the heirs, by stealing the masterpiece from view, to "put a little pressure" on the administration ...
+    What nobody knows either, is that this iconic sculpture has been for more than ten years at the heart of a muffled legal battle, opposing the French State to the descendants of the young Russian, who would like to recover the statue, for the resell. Small precision that gives an idea of ​​the issue: after Giacometti, Brancusi is today the most expensive sculptor in the world.<br><br>
     
-    What nobody knows either, is that this iconic sculpture has been for more than ten years at the heart of a muffled legal battle, opposing the French State to the descendants of the young Russian, who would like to recover the statue, for the resell. Small precision that gives an idea of ​​the issue: after Giacometti, Brancusi is today the most expensive sculptor in the world.
+    At auction, the sculpture in the Montparnasse cemetery could reach 40 or 50 million ". All things considered, it is as if Mona Lisa was hung day and night in the Tuileries garden. In 2006 Guillaume Duhamel asked for the right to export Brancusi's sculpture. Clearly, the idea is to dissociate it from the stele, replace it with a copy and sell it at auction.<br><br>
+    But the French Minister of Culture classified Le Baiser "national treasure", which had the effect of prohibiting any exit from French territory. The entire tomb of Tatiana Rachewskaïa is an historic monuments. <br><br>
     
-    At auction, the sculpture in the Montparnasse cemetery could reach 40 or 50 million ". All things considered, it is as if Mona Lisa was hung day and night in the Tuileries garden. In 2006 Guillaume Duhamel asked for the right to export Brancusi's sculpture. Clearly, the idea is to dissociate it from the stele, replace it with a copy and sell it at auction.
-    But the French Minister of Culture classified Le Baiser "national treasure", which had the effect of prohibiting any exit from French territory. The entire tomb of Tatiana Rachewskaïa is an historic monuments. 
+    Funny thing : Tatiana’s mother frankly admits that she hardly appreciates her work. The family even thought for a while to replace it with a bust of Tatiana !<br><br>
     
-    Funny thing : Tatiana’s mother frankly admits that she hardly appreciates her work. The family even thought for a while to replace it with a bust of Tatiana !
+    Should it stay under the sky publicly or should it be sold ? One thing clouds are sure about : the secret will remain in the sky gallery forever.<br><br>
     
-    Should it stay under the sky publicly or should it be sold ? One thing clouds are sure about : the secret will remain in the sky gallery forever.
-    
-    Sources: Barbu Brezianu, "Le secret du Baiser de Montparnasse", dans La Revue du Louvre et des musées de France n°1, 1969.</div> 
+    Sources: Barbu Brezianu, "Le secret du Baiser de Montparnasse", dans La Revue du Louvre et des musées de France n°1, 1969.</p></div> 
     `,
   },
 ];
@@ -329,6 +349,11 @@ function goToPrevious() {
 homePage();
 
 function homePage() {
+  document.body.style.paddingLeft = 0;
+  let footer = document.querySelector("footer");
+  console.log(footer);
+  footer.style.height = "40vh";
+
   document.body.innerHTML = pages[page].body;
   let nextPage = document.querySelector(".nextPage");
   let ray = document.getElementById("ray");
@@ -339,6 +364,10 @@ function homePage() {
 }
 
 function pageIntro() {
+  document.body.style.paddingLeft = "60px";
+  let footer = document.querySelector("footer");
+  footer.style.height = "20vh";
+
   rightToContinue = true;
   displayNext();
 }
@@ -541,7 +570,13 @@ function pageRebus() {
 }
 
 function pageSecret() {
+  document.body.style.marginLeft = 0;
+  document.body.style.paddingLeft = 0;
+  document.body.style.maxHeight = "100vh";
+  document.body.style.width = "100%";
+
   rightToContinue = false;
+
   displayNext();
   displayNext();
   // window.removeEventListener("keydown", yolo);
