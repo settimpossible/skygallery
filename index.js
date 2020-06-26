@@ -158,7 +158,7 @@ const pages = [
   <p class="resize">🌊🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂</p>
     <input class="enigma1-nb2" type="text" id="ocean" name="nb" required
     minlength="1" maxlength="20" size="10">
-    <p id="output-ocean" class="resize-output">O<span>CE</span>AN'S ELEVEN</p>
+    <p id="output-ocean" class="resize-output invisible">O<span>CE</span>AN'S ELEVEN</p>
   </div>
   
   <div class="put-in-line">
