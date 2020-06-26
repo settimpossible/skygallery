@@ -1,4 +1,4 @@
-let page = 3;
+let page = 0;
 let rightToContinue = true;
 const pages = [
   {
@@ -120,7 +120,7 @@ const pages = [
     answer: "montparnasse",
     background: "url(./gallery/background/6.png)",
     body: `
-    <h1>The artwork's location</h1>
+    <h1 class='lieu'>The artwork's location</h1>
     <input id="location" class="enigma1-nb" type="text" id="nb1" name="nb" required
     minlength="1" maxlength="20" size="10">
 
