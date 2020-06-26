@@ -243,15 +243,11 @@ const pages = [
     logic: pageAudio,
     answer: "kiss",
     background: "url(./gallery/background/8.png)",
-    body: ` <h1>Discover what's the name of the artwork</h1>
-    <p>raconter la vie</p>
-
+    body: ` <h1>The artwork's title</h1>
     <audio
         controls
         src="./gallery/enigma/kisskiss.mp3" preload="auto">
     </audio>
-
-  <label for="nb">Please add your answer here :</label>
   
   <input class="enigma1-nb" type="text" id="nb1" name="nb" required
          minlength="1" maxlength="10" size="10">

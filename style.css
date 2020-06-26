@@ -229,7 +229,9 @@ span {
     font-weight: 900;
     color: springgreen;
 }
-
+audio {
+    margin-left:10rem;
+}
 button {
     position: relative;
     padding:10px;
@@ -244,9 +246,9 @@ button {
 .button-prev-next {
     z-index: 0;
 }
-.hidden{
+/* .hidden{
     display:none;
-} 
+}  */
 
 #hiddenyes, #hiddenno {
     position: fixed;
