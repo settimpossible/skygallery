@@ -89,8 +89,7 @@ const pages = [
     background: "url(./gallery/background/5.png)",
     body: `
     <h1>Discover the artist's name</h1>
-    <p>Using your key, 
-    Find what's the author's name!</p>
+    <p>You will probably need your key.</p>
     <h2>HTSXYFSYNS GWFSHZHN</h2>
  
   
@@ -121,17 +120,16 @@ const pages = [
     answer: "montparnasse",
     background: "url(./gallery/background/6.png)",
     body: `
-    <h1>The artwork's name</h1>
-    <p></p>    
-    <img class='personnage perso1' src="./gallery/personnage/7.png" alt="perso">
+    <h1>The artwork's location</h1>
+    <input id="location" class="enigma1-nb" type="text" id="nb1" name="nb" required
+    minlength="1" maxlength="20" size="10">
+
+    <button id="submit-enigma1">Let's try this!</button>
+    <img class='personnage perso2' src="./gallery/personnage/7.png" alt="perso">
    
     <img id="lieu" src="./gallery/enigma/enigma2.jpg" alt="montpar">
+  
 
-  
-    <input class="enigma1-nb" type="text" id="nb1" name="nb" required
-           minlength="1" maxlength="20" size="10">
-  
-    <button id="submit-enigma1">Let's try this!</button>
 
 
     <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
