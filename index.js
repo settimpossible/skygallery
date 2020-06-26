@@ -1,22 +1,25 @@
-let page = 5;
+let page = 3;
 let rightToContinue = true;
 const pages = [
   {
     title: "Homepage",
     background: "url(./gallery/background/1.png)",
-    //background2: `<img src="./gallery/background/2.png" alt="ray">`,
     body: `
     <section class="container">
-        <div class="center-image"><img id="icone1" src="/accueil/1.png" alt="icone1"></div>
-        <div class="center-image"><img id="icone2"src="/accueil/2.png" alt="icone2"></div>
-        <div class="center-image"><img id="icone3" src="/accueil/3.png" alt="icone3"></div>
+        <div class="center-image"><img id="icone1" src="./accueil/1.png" alt="icone1"></div>
+        <div class="center-image"><img id="icone2"src="./accueil/2.png" alt="icone2"></div>
+        <div class="center-image"><img id="icone3" src="./accueil/3.png" alt="icone3"></div>
     </section>
     <div class="ray-hoover"></div>
 
         <footer id="cloud-container" class="nextPage enter-game" >
-            <h1 class="incline" >Sky gallery</h1>
-            <img id="cloud" src="/accueil/cloud.png" alt="cloud">
-            <img id="arrow" src="/accueil/arrow.gif" alt="arrow">
+        <div class='sub-footer'>
+          <div class="footer-title incline" >Sky gallery</div>
+          <img id='ray' class='hidden' src="./accueil/ray.png" alt="cloud">
+          <img id="cloud" class='footer-cloud' src="./accueil/cloud.png" alt="cloud">
+          <img id="arrow" class='footer-arrow' src="./accueil/arrow.gif" alt="arrow">
+        </div>
+
         </footer>
         `,
   },
@@ -24,13 +27,23 @@ const pages = [
     title: "Introduction",
     logic: pageIntro,
     background: "url(./gallery/background/8.png)",
-    body: `  <p> page intro
+    body: `  
+    <div class="bloc">
+    <h1>Are you ready?</h1>
+    <p> Clouds tell secrets about pieces of art. <br>
+
+    Not any piece of art, though.<br>
+    
+    They will remain silent until you find out!<br>
   </p>
+  </div>
+  <img class='personnage perso1' src="./gallery/personnage/4.png" alt="perso">
+
   <footer class="button-prev-next">
-    <div >
+    <div>
         <img class='previous-page previousPage' src="./gallery/arrow/3.png" alt="arrowprevious">
     </div>
-    <div  >
+    <div>
         <img id='continue' class="nextPage next-page hidden" src="./gallery/arrow/3.png" alt="arrownext">
     </div>
   </footer>`,
@@ -48,17 +61,17 @@ const pages = [
     We are 6, we are 3, 🤯<br>
     What if we are 7 ? 😳<br>
   </p>
-  
-  <label for="nb">Please add your answer here :</label>
+
+  <img class='personnage perso1' src="./gallery/personnage/2.png" alt="perso">
+
   
   <input class="enigma1-nb" type="number" id="nb1" name="nb" required
          minlength="1" maxlength="10" size="10">
 
   <button id="submit-enigma1">Let's try this!</button>
-  <div>
   <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
   <img src="./gallery/output/no.png" id="hiddenno" class="hidden"/>
-  </div>
+
   <footer class="button-prev-next">
     <div >
         <img class='previous-page previousPage' src="./gallery/arrow/3.png" alt="arrowprevious">
@@ -73,18 +86,19 @@ const pages = [
     answer: "constantinbrancusi",
     logic: pageCrypto,
 
-    background: "url(./gallery/background/4.png)",
+    background: "url(./gallery/background/5.png)",
     body: `
     <h1>Discover the artist's name</h1>
-    <p>With the help of the previous enigma, find what's the author's name!</p>
-    <h2>HTSXYFSYNS-GWFSHZHN</h2>
+    <p>Using your key, 
+    Find what's the author's name!</p>
+    <h2>HTSXYFSYNS GWFSHZHN</h2>
  
-    <label for="nb">Please add your answer here :</label>
   
     <input class="enigma1-nb" type="text" id="nb1" name="nb" required
            minlength="1" maxlength="20" size="10">
   
     <button id="submit-enigma1">Let's try this!</button>
+    <img class='personnage perso1' src="./gallery/personnage/2.png" alt="perso">
 
     <div>
     <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
@@ -105,23 +119,24 @@ const pages = [
     title: "Chapter Three",
     logic: pageLocation,
     answer: "montparnasse",
-    background: "url(./gallery/background/5.png)",
+    background: "url(./gallery/background/6.png)",
     body: `
-    <h1>Discover what's the name of the artwork</h1>
-    <p>raconter la vie</p>
+    <h1>The artwork's name</h1>
+    <p></p>    
+    <img class='personnage perso1' src="./gallery/personnage/7.png" alt="perso">
+   
+    <img id="lieu" src="./gallery/enigma/enigma2.jpg" alt="montpar">
 
-    <label for="nb">Please add your answer here :</label>
   
     <input class="enigma1-nb" type="text" id="nb1" name="nb" required
            minlength="1" maxlength="20" size="10">
   
     <button id="submit-enigma1">Let's try this!</button>
-    <img src="./gallery/enigma/enigma2.jpg" alt="montpar">
 
-    <div>
+
     <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
     <img src="./gallery/output/no.png" id="hiddenno" class="hidden"/>
-    </div>
+
     
             <footer class="button-prev-next">
             <div >
@@ -258,6 +273,38 @@ const pages = [
     </div>
   </footer>`,
   },
+  {
+    title: "Secret",
+    logic: pageSecret,
+    background: "url(./gallery/background/8.png)",
+    body: `<h1>Congratulations! You can access the secret</h1>
+
+    <p>It's a strange wooden box, right ?
+    
+    For the past few years, it has completely covered the stele of a tomb in the Montparnasse cemetery in Paris. 
+    
+    Tourists, who wander between the alleys where Baudelaire, Maupassant or Gainsbourg are buried, often pass in front of them without even looking at him. 
+    
+    And yet, if they knew... These light wooden boards conceal one of the most expensive sculptures in the world: The Kiss, by Constantin Brancusi, a block of limestone representing a couple fused together. 
+    
+    A marvel of simplicity, which adorns the tomb of a certain Tatiania Rachewskaïa, a young Russian, one relative of Tolstoï, who mysteriously committed suicide in Paris, in 1910. 
+    
+    To perfect her French, the young exile takes lessons from a doctor of Romanian origin from the Pasteur Institute, Solomon Marbais. Soon, a passionate romance is born between the student and the doctor. An idyll that will end in the great tradition of the Russian novel. At the end of November 1910, Dr. Marbais' sister visited Tatiana Rachewskaïa in her room on the boulevard de Port-Royal. When she pushes the door, she discovers the young Russian hanged. Suicide. Amorous despair. She was 23 years old.
+    
+    The Kiss still rests on the tomb of Tatiana Rachewskaïa. To make matters worse, it is located in an isolated corner of the 22nd division of the cemetery, just a few meters from the surrounding wall. Three discreet surveillance cameras are constantly pointed at this treasure, which is also protected by an alarm. And then, for a few months now, there has been the famous wooden case for obvious risks of deterioration. There is frost, bad weather, foam, automobile pollution on Boulevard Raspail, much more corrosive than in 1910. Not to mention the possible fall of a tree." Manner, also, no doubt, for the heirs, by stealing the masterpiece from view, to "put a little pressure" on the administration ...
+    
+    What nobody knows either, is that this iconic sculpture has been for more than ten years at the heart of a muffled legal battle, opposing the French State to the descendants of the young Russian, who would like to recover the statue, for the resell. Small precision that gives an idea of ​​the issue: after Giacometti, Brancusi is today the most expensive sculptor in the world.
+    
+    At auction, the sculpture in the Montparnasse cemetery could reach 40 or 50 million ". All things considered, it is as if Mona Lisa was hung day and night in the Tuileries garden. In 2006 Guillaume Duhamel asked for the right to export Brancusi's sculpture. Clearly, the idea is to dissociate it from the stele, replace it with a copy and sell it at auction.
+    But the French Minister of Culture classified Le Baiser "national treasure", which had the effect of prohibiting any exit from French territory. The entire tomb of Tatiana Rachewskaïa is an historic monuments. 
+    
+    Funny thing : Tatiana’s mother frankly admits that she hardly appreciates her work. The family even thought for a while to replace it with a bust of Tatiana !
+    
+    Should it stay under the sky publicly or should it be sold ? One thing clouds are sure about : the secret will remain in the sky gallery forever.
+    
+    Sources: Barbu Brezianu, "Le secret du Baiser de Montparnasse", dans La Revue du Louvre et des musées de France n°1, 1969.</p> 
+    `,
+  },
 ];
 
 function goToNext() {
@@ -292,19 +339,10 @@ homePage();
 function homePage() {
   document.body.innerHTML = pages[page].body;
   let nextPage = document.querySelector(".nextPage");
+  let ray = document.getElementById("ray");
   document.body.style.backgroundImage = pages[page].background;
-  nextPage.addEventListener(
-    "mouseover",
-    () =>
-      (document.querySelector(".ray-hoover").innerHTML =
-        pages[page].background2)
-  );
-  nextPage.removeEventListener(
-    "mouseout",
-    () =>
-      (document.querySelector(".ray-hoover").innerHTML =
-        pages[page].background2)
-  );
+  nextPage.addEventListener("mouseover", () => ray.classList.remove("hidden"));
+  nextPage.addEventListener("mouseout", () => ray.classList.add("hidden"));
   nextPage.addEventListener("click", goToNext);
 }
 
@@ -507,5 +545,12 @@ function pageRebus() {
     }
     displayNext();
   });
+  // window.removeEventListener("keydown", yolo);
+}
+
+function pageSecret() {
+  rightToContinue = false;
+  displayNext();
+  displayNext();
   // window.removeEventListener("keydown", yolo);
 }
