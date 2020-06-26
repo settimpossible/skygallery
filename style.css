@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'madelyn';
-    src: url('../madelyn/madelyn-webfont.woff2') format('woff2'),
-         url('../madelyn/madelyn-webfont.woff') format('woff');
+    src: url('./madelyn/madelyn-webfont.woff2') format('woff2'),
+         url('./madelyn/madelyn-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
