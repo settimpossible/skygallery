@@ -120,13 +120,14 @@ const pages = [
     answer: "montparnasse",
     background: "url(./gallery/background/6.png)",
     body: `
+    <div class="locationlieu">
     <h1 class='lieu'>The artwork's location</h1>
     <input id="location" class="enigma1-nb" type="text" id="nb1" name="nb" required
     minlength="1" maxlength="20" size="10">
-
     <button id="submit-enigma1">Let's try this!</button>
+    </div>
     <img class='personnage perso2' src="./gallery/personnage/7.png" alt="perso">
-   
+
     <img id="lieu" src="./gallery/enigma/enigma2.jpg" alt="montpar">
   
 
@@ -152,11 +153,12 @@ const pages = [
     answer: "cemetery",
     background: "url(./gallery/background/6.png)",
     body: `<h1>Discover where in Montparnasse the artwork is!</h1>
+    <div class='box-film'>
     <div class="put-in-line">
   <p class="resize">🌊🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂</p>
     <input class="enigma1-nb2" type="text" id="ocean" name="nb" required
     minlength="1" maxlength="20" size="10">
-    <p id="output-ocean" class="resize-output invisible">O<span>CE</span>AN'S ELEVEN</p>
+    <p id="output-ocean" class="resize-output">O<span>CE</span>AN'S ELEVEN</p>
   </div>
   
   <div class="put-in-line">
@@ -181,10 +183,7 @@ const pages = [
           minlength="1" maxlength="20" size="10">
           <p id="output-harry" class="resize-output invisible">HAR<span>RY </span> &nbsp POTTER</p>
         </div>
-  
-  
-  
-    <label for="nb">Please add your answer here :</label>
+        </div>
   
     <input class="enigma1-nb" type="text" id="nb1" name="nb" required
            minlength="1" maxlength="20" size="10">
@@ -212,16 +211,16 @@ const pages = [
     answer: "sculpture",
     background: "url(./gallery/background/6.png)",
     body: `
-    <h1>Discover what's the name of the artwork</h1>
-    <p>raconter la vie</p>
-
-    <label for="nb">Please add your answer here :</label>
-  
+    <h1>The artwork's name</h1>  
     <input class="enigma1-nb" type="text" id="nb1" name="nb" required
-           minlength="1" maxlength="20" size="10">
-  
-    <button id="submit-enigma1">Let's try this!</button>
-    <img src="./gallery/enigma/1.png" alt="art-type">
+    minlength="1" maxlength="20" size="10">
+
+<button id="submit-enigma1">Let's try this!</button>
+    <div class="rebus-box">
+
+    <img class="rebus" src="./gallery/enigma/1.png" alt="art-type">
+    </div>
+
 
     <div>
     <img src="./gallery/output/yes.png" id="hiddenyes" class="hidden"/>
@@ -276,8 +275,7 @@ const pages = [
     logic: pageSecret,
     background: "url(./gallery/background/8.png)",
     body: `<h1>Congratulations! You can access the secret</h1>
-
-    <p>It's a strange wooden box, right ?
+    <div class="secret">It's a strange wooden box, right ?
     
     For the past few years, it has completely covered the stele of a tomb in the Montparnasse cemetery in Paris. 
     
@@ -300,7 +298,7 @@ const pages = [
     
     Should it stay under the sky publicly or should it be sold ? One thing clouds are sure about : the secret will remain in the sky gallery forever.
     
-    Sources: Barbu Brezianu, "Le secret du Baiser de Montparnasse", dans La Revue du Louvre et des musées de France n°1, 1969.</p> 
+    Sources: Barbu Brezianu, "Le secret du Baiser de Montparnasse", dans La Revue du Louvre et des musées de France n°1, 1969.</div> 
     `,
   },
 ];
